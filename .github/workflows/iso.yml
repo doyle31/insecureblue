@@ -123,7 +123,7 @@ jobs:
 
           # validate signature
           curl -fLsS --retry 5 -O "https://repo.insecureblue.dev/insecureblue.gpg"
-          gpg --no-default-keyring --keyring ./secureblue-keyring.gpg --import insecureblue.gpg
+          gpg --no-default-keyring --keyring ./insecureblue-keyring.gpg --import insecureblue.gpg
 
           if ! gpgv --keyring ./insecureblue-keyring.gpg "${CHECKSUM_NAME}"; then
               echo "CHECKSUM signature verification FAILED! Exiting..."
