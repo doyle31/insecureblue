@@ -23,15 +23,15 @@ jobs:
       fail-fast: false
       matrix:
         image:
-          - silverblue-main-hardened
-          - silverblue-nvidia-hardened
-          - silverblue-nvidia-open-hardened
-          - kinoite-main-hardened
-          - kinoite-nvidia-hardened
-          - kinoite-nvidia-open-hardened
-          - sericea-main-hardened
-          - sericea-nvidia-hardened
-          - sericea-nvidia-open-hardened
+          # - silverblue-main-hardened
+          # - silverblue-nvidia-hardened
+          # - silverblue-nvidia-open-hardened
+           - kinoite-main-hardened
+          # - kinoite-nvidia-hardened
+          # - kinoite-nvidia-open-hardened
+          # - sericea-main-hardened
+          # - sericea-nvidia-hardened
+          # - sericea-nvidia-open-hardened
     permissions:
       contents: read # read repo contents
       packages: read # pull images for iso generation
@@ -150,16 +150,16 @@ jobs:
           compression-level: 0
           overwrite: true
 
-      - name: Upload ISO and checksum to R2 to ISOS Bucket
-        shell: bash
-        env:
-          RCLONE_CONFIG_R2_TYPE: s3
-          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
-          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.ISOS_ACCESS_KEY_ID }}
-          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.ISOS_SECRET_ACCESS_KEY }}
-          RCLONE_CONFIG_R2_REGION: auto
-          RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.ISOS_ENDPOINT }}
-          OUTPUT_DIRECTORY: ${{ steps.rename.outputs.output-directory }}
-          SOURCE_DIR: .
-        run: |
-          rclone copy "${OUTPUT_DIRECTORY}" R2:isos
+      # - name: Upload ISO and checksum to R2 to ISOS Bucket
+      #   shell: bash
+      #   env:
+      #     RCLONE_CONFIG_R2_TYPE: s3
+      #     RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+      #     RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.ISOS_ACCESS_KEY_ID }}
+      #     RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.ISOS_SECRET_ACCESS_KEY }}
+      #     RCLONE_CONFIG_R2_REGION: auto
+      #     RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.ISOS_ENDPOINT }}
+      #     OUTPUT_DIRECTORY: ${{ steps.rename.outputs.output-directory }}
+      #     SOURCE_DIR: .
+      #   run: |
+      #     rclone copy "${OUTPUT_DIRECTORY}" R2:isos
