@@ -6,7 +6,7 @@ name: iot-nvidia-open-hardened
 
 description: "IOT with nvidia-open, hardened"
 
-base-image: ghcr.io/secureblue/iot-main-hardened
+base-image: ghcr.io/doyle31/iot-main-hardened
 
 image-version: latest
 

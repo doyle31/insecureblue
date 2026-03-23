@@ -6,7 +6,7 @@ name: iot-zfs-main-hardened
 
 description: "IOT with zfs, hardened"
 
-base-image: ghcr.io/secureblue/iot-main-hardened
+base-image: ghcr.io/doyle31/iot-main-hardened
 
 image-version: latest
 

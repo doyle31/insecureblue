@@ -6,7 +6,7 @@ name: securecore-zfs-main-hardened
 
 description: "CoreOS with zfs, hardened"
 
-base-image: ghcr.io/secureblue/securecore-main-hardened
+base-image: ghcr.io/doyle31/securecore-main-hardened
 
 image-version: latest
 

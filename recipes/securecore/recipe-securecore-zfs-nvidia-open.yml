@@ -6,7 +6,7 @@ name: securecore-zfs-nvidia-open-hardened
 
 description: "CoreOS with nvidia-open and zfs, hardened"
 
-base-image: ghcr.io/secureblue/securecore-zfs-main-hardened
+base-image: ghcr.io/doyle31/securecore-zfs-main-hardened
 
 image-version: latest
 

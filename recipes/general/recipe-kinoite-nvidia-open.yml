@@ -6,7 +6,7 @@ name: kinoite-nvidia-open-hardened
 
 description: "Kinoite with nvidia-open, hardened"
 
-base-image: ghcr.io/secureblue/kinoite-main-hardened
+base-image: ghcr.io/doyle31/kinoite-main-hardened
 
 image-version: latest
 

@@ -6,7 +6,7 @@ name: sericea-nvidia-open-hardened
 
 description: "Sericea with nvidia-open, hardened"
 
-base-image: ghcr.io/secureblue/sericea-main-hardened
+base-image: ghcr.io/doyle31/sericea-main-hardened
 
 image-version: latest
 

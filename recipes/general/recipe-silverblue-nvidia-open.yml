@@ -6,7 +6,7 @@ name: silverblue-nvidia-open-hardened
 
 description: "Silverblue with nvidia-open, hardened"
 
-base-image: ghcr.io/secureblue/silverblue-main-hardened
+base-image: ghcr.io/doyle31/silverblue-main-hardened
 
 image-version: latest
 

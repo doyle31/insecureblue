@@ -6,7 +6,7 @@ name: kinoite-nvidia-hardened
 
 description: "Kinoite with nvidia, hardened"
 
-base-image: ghcr.io/secureblue/kinoite-main-hardened
+base-image: ghcr.io/doyle31/kinoite-main-hardened
 
 image-version: latest
 

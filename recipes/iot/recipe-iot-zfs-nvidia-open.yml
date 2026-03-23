@@ -6,7 +6,7 @@ name: iot-zfs-nvidia-open-hardened
 
 description: "IOT with nvidia-open and zfs, hardened"
 
-base-image: ghcr.io/secureblue/iot-zfs-main-hardened
+base-image: ghcr.io/doyle31/iot-zfs-main-hardened
 
 image-version: latest
 

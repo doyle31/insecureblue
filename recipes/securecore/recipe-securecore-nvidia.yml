@@ -6,7 +6,7 @@ name: securecore-nvidia-hardened
 
 description: "CoreOS with nvidia, hardened"
 
-base-image: ghcr.io/secureblue/securecore-main-hardened
+base-image: ghcr.io/doyle31/securecore-main-hardened
 
 image-version: latest
 
