@@ -90,7 +90,7 @@ jobs:
           TARGET_OUTPUT_DIRECTORY="$(pwd)/output"
           mkdir "${TARGET_OUTPUT_DIRECTORY}"
           PREFIX="insecureblue"
-          DATE_SUFFIX="$(date +%Y%m%d)"
+          #DATE_SUFFIX="$(date +%Y%m%d)"
           ISO_NAME="${PREFIX}-${IMAGE_NAME}-${DATE_SUFFIX}.iso"
           CHECKSUM_NAME="${ISO_NAME}-CHECKSUM"
           mv "${IMAGE_NAME}.iso" "${ISO_NAME}"
@@ -150,16 +150,16 @@ jobs:
           compression-level: 0
           overwrite: true
 
-      # - name: Upload ISO and checksum to R2 to ISOS Bucket
-      #   shell: bash
-      #   env:
-      #     RCLONE_CONFIG_R2_TYPE: s3
-      #     RCLONE_CONFIG_R2_PROVIDER: Cloudflare
-      #     RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.ISOS_ACCESS_KEY_ID }}
-      #     RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.ISOS_SECRET_ACCESS_KEY }}
-      #     RCLONE_CONFIG_R2_REGION: auto
-      #     RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.ISOS_ENDPOINT }}
-      #     OUTPUT_DIRECTORY: ${{ steps.rename.outputs.output-directory }}
-      #     SOURCE_DIR: .
-      #   run: |
-      #     rclone copy "${OUTPUT_DIRECTORY}" R2:isos
+      - name: Upload ISO and checksum to R2 to ISOS Bucket
+        shell: bash
+        env:
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.ISOS_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.ISOS_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_REGION: auto
+          RCLONE_CONFIG_R2_ENDPOINT: ${{ secrets.ISOS_ENDPOINT }}
+          OUTPUT_DIRECTORY: ${{ steps.rename.outputs.output-directory }}
+          SOURCE_DIR: .
+        run: |
+          rclone copy "${OUTPUT_DIRECTORY}" R2:insecureblue
