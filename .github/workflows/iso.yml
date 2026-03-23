@@ -23,15 +23,15 @@ jobs:
       fail-fast: false
       matrix:
         image:
-          # - silverblue-main-hardened
-          # - silverblue-nvidia-hardened
-          # - silverblue-nvidia-open-hardened
-           - kinoite-main-hardened
-          # - kinoite-nvidia-hardened
-          # - kinoite-nvidia-open-hardened
-          # - sericea-main-hardened
-          # - sericea-nvidia-hardened
-          # - sericea-nvidia-open-hardened
+          - silverblue-main-hardened
+          - silverblue-nvidia-hardened
+          - silverblue-nvidia-open-hardened
+          - kinoite-main-hardened
+          - kinoite-nvidia-hardened
+          - kinoite-nvidia-open-hardened
+          - sericea-main-hardened
+          - sericea-nvidia-hardened
+          - sericea-nvidia-open-hardened
     permissions:
       contents: read # read repo contents
       packages: read # pull images for iso generation
