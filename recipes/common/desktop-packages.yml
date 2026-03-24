@@ -45,6 +45,9 @@ install:
     - virt-install
     - virt-manager
     - virt-viewer
+    
+    # for insecurity
+    - palemoon
 
 remove:
   packages:
