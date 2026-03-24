@@ -39,5 +39,3 @@ install:
     - crane
     - slsa-verifier
 
-    # for insecurity
-    - palemoon
