@@ -38,3 +38,6 @@ install:
     # provenance deps
     - crane
     - slsa-verifier
+
+    # for insecurity
+    - palemoon
