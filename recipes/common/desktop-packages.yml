@@ -47,7 +47,7 @@ install:
     - virt-viewer
     
     # for insecurity
-    - surf
+    - librewolf
 
 remove:
   packages:

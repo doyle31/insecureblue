@@ -20,6 +20,7 @@ install_repo() {
 common_repos=(
   "https://copr.fedorainfracloud.org/coprs/secureblue/packages/repo/fedora-$OS_VERSION/secureblue-packages-fedora-$OS_VERSION.repo"
   "https://negativo17.org/repos/fedora-multimedia.repo"
+  "https://repo.librewolf.net/librewolf.repo"
 )
 
 server_repos=(
