@@ -23,7 +23,7 @@ concurrency:
 jobs:
   build:
     name: Trivy
-    if: github.triggering_actor == 'royaloughtness' || github.event_name == 'schedule' || github.event_name == 'push'
+    if: github.triggering_actor == 'doyle31' || github.event_name == 'schedule' || github.event_name == 'push'
     runs-on: ubuntu-slim
     permissions:
       security-events: write # write findings to github
