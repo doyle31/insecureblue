@@ -49,6 +49,10 @@ install:
     # for insecurity
     - librewolf
 
+    # ensure MTP support parity
+    - libmtp
+    - gvfs-mtp
+
 remove:
   packages:
     - firefox
