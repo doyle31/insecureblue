@@ -13,8 +13,8 @@ on:
       - '**/rpm-gpg/*'
       - 'files/scripts/**'
       - 'tools/**'
-  schedule:
-    - cron: "00 3 * * *" # run at 3:00 UTC every day
+  #schedule:
+   # - cron: "00 3 * * *" # run at 3:00 UTC every day
   workflow_dispatch:
 
 concurrency:
