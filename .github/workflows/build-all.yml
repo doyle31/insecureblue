@@ -5,8 +5,8 @@
 name: build
 permissions: {}
 on:
-  schedule:
-    - cron: "00 6 * * *" # build at 6:00 UTC every day
+  #schedule:
+   # - cron: "00 6 * * *" # build at 6:00 UTC every day
 
   push:
     branches-ignore: # don't rebuild for dependabot
