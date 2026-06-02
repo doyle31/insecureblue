@@ -5,8 +5,8 @@
 name: verify-provenance
 permissions: {}
 on:
-  schedule:
-    - cron: "00 15 * * *" # run at 15:00 UTC every day
+  #schedule:
+  #  - cron: "00 15 * * *" # run at 15:00 UTC every day
 
   workflow_dispatch:
 
