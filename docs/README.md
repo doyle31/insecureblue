@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This project is not actively maintained and does not currently build, and I shouldn't have to say this, but PLEASE don't daily drive this distro
+
 <p align="center">
   <a href="https://insecureblue.dev">
     <img src="https://github.com/doyle31/insecureblue/blob/live/docs/secureblue.png" href="https://github.com/doyle31/insecureblue" alt="secureblue logo" width=180 />
